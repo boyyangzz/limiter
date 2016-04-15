@@ -12,4 +12,4 @@ $userid=addslashes($_GET['userid']);
 $new=new limiter_class();
 
 $limit=$new->limit_redis($userid);
-$limit['error']==-1 ? echo '访问频繁,稍后尝试'; :  echo '正常访问';
+echo $limit['error']==-1 ? '访问频繁,稍后尝试' :  '正常访问';
