@@ -12,4 +12,4 @@ redis 限速器
 
 请求实例：
 
-http://127.0.0.1/demo.php?userid=1
+# http://127.0.0.1/demo.php?userid=1
