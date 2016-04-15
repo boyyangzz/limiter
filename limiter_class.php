@@ -36,7 +36,16 @@ class limiter_class {
         return $current;
 
     }
-
+    
+   // 查看所有黑名单用户
+    function black_list()
+    {
+        $redis=$this->rlink;
+        $data=$redis->hGetAll('black_list');
+        return $data;
+        
+    }
+    
 
     function __destruct() {
         $this->close();
