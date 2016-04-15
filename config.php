@@ -1,3 +1,4 @@
+<?php
 define("REDIS_HOST", '127.0.0.1');//服务器IP
 define("REDIS_PASS", '123');//授权密码
 define("REDIS_PORT", 6379);
